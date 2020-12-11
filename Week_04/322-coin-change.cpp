@@ -6,6 +6,7 @@ using namespace std;
 class Solution {
 public:
     int coinChange(vector<int>& coins, int amount) {
+        // dp[i]: 凑齐总价值 i 需要的最少硬币个数
         vector<int> dp(amount+1, amount+1);
 
         dp[0] = 0;
